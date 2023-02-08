@@ -1,0 +1,4 @@
+#!/bin/bash
+
+echo "contents of $(pwd):"
+ls -l
