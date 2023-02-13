@@ -1,0 +1,13 @@
+#!/bin/bash
+
+
+
+# read the input from the user
+
+read -p "Enter the input: " input
+
+
+
+# use rev to reverse the input
+
+echo "$input" | rev

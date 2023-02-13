@@ -1,0 +1,13 @@
+#!/bin/bash
+
+
+
+# read the input from the user
+
+read -p "Enter the input: " input
+
+
+
+# use sed to replace all occurrences of 'A' with 'Z' and 'c' with 'e' in the input
+
+echo "$input" | sed 's/A/Z/g; s/c/e/g'

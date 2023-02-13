@@ -1,0 +1,25 @@
+#!/bin/bash
+
+
+
+line_number=3
+
+counter=1
+
+
+
+while read line
+
+do
+
+    if [ $counter -eq $line_number ]; then
+    
+        echo $line
+	
+        break
+	
+    fi
+    
+    ((counter++))
+    
+done < iacta

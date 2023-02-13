@@ -1,0 +1,7 @@
+#!/bin/bash
+
+
+
+# use grep to search for lines starting with a letter in the file /etc/ssh/sshd_config
+
+grep '^[A-Za-z]' /etc/ssh/sshd_config

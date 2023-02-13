@@ -1,0 +1,36 @@
+#!/bin/bash
+
+
+
+# create an associative array to store the frequency of each word
+
+declare -A word_count
+
+
+
+# read words from standard input
+
+while read word; do
+
+  # increment the count of the current word
+  
+  word_count["$word"]=$((word_count["$word"] + 1))
+  
+done
+
+
+
+# loop through each word in the associative array
+
+for word in "${!word_count[@]}"; do
+
+  # if the word appears only once, print it
+  
+  if [[ ${word_count["$word"]} -eq 1 ]]; then
+  
+    echo "$word"
+    
+  fi
+  
+done | sort
+

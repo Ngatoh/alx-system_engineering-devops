@@ -1,0 +1,13 @@
+#!/bin/bash
+
+
+
+# read the input from the user
+
+read -p "Enter the input: " input
+
+
+
+# use tr to remove all occurrences of 'c' and 'C' from the input
+
+echo "$input" | tr -d 'cC'
