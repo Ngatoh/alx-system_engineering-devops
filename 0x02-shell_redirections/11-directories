@@ -1,13 +1,2 @@
 #!/bin/bash
-
-
-
-# Count the number of directories and subdirectories in the current directory, excluding the current and parent directories and including hidden directories
-
-count=$(find . -type d \( ! -name . -a ! -name .. \) -print | wc -l)
-
-
-
-# Print the count
-
-echo "The number of directories is $count"
+find . -type f -name "*.js" | tail -n +1 | xargs rm
