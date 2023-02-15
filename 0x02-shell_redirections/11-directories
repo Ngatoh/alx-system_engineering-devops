@@ -1,2 +1,2 @@
 #!/bin/bash
-find . -type f -name "*.js" | tail -n +1 | xargs rm
+find . -mindepth 1 -type d | tail -n +2 | wc -l
