@@ -1,0 +1,2 @@
+#!/bin/bash
+find . -type f -iname "*.gif" -printf "%f\n" | perl -pe 's/\.gif$//i' | sort -f
