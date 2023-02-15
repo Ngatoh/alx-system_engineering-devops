@@ -1,20 +1,2 @@
 #!/bin/bash
-
-
-
-# get the list of all files in the current directory
-
-files=$(ls -1)
-
-
-
-# loop through each file and print its modification time and name
-
-for file in $files; do
-
-  mod_time=$(stat -c %Y $file)
-  
-  printf "%s\t%s\n" "$mod_time" "$file"
-  
-done | sort -nr | head -n 10
-
+ls -t | head -10
