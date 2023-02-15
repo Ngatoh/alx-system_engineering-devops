@@ -1,7 +1,2 @@
 #!/bin/bash
-
-
-
-# use awk to extract the username and home directory fields from /etc/passwd, then sort them
-
 awk -F: '{print $1, $6}' /etc/passwd | sort
