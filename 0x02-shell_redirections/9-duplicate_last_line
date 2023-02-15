@@ -1,17 +1,3 @@
 #!/bin/bash
-
-
-
-filename="iacta"
-
-
-
-# Get the last line of the file
-
-last_line=$(tail -1 "$filename")
-
-
-
-# Append the last line to the end of the file
-
-echo "$last_line" >> "$filename"
+readarray -t lines < iacta
+echo "${lines[-1]}" >> iacta
